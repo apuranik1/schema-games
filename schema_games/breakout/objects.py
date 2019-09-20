@@ -104,6 +104,7 @@ class BreakoutObject(object):
         if is_entity:
             self.entity_id = BreakoutObject.unique_entity_id
             BreakoutObject.unique_entity_id += MAX_NZIS_PER_ENTITY
+            print(self._nzis)
             assert len(self._nzis) <= MAX_NZIS_PER_ENTITY
         else:
             self.entity_id = None
